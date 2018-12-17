@@ -16,6 +16,7 @@ homebrew_cask_packages:
 - flux
 - github
 - iterm2
+- keybase
 - signal
 - slack
 - spectacle
