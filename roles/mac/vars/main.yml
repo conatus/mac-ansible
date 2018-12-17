@@ -1,0 +1,18 @@
+homebrew_taps:
+- homebrew/cask
+
+homebrew_package_removals: []
+
+homebrew_packages:
+- python
+- git
+
+homebrew_cask_removals: []
+
+homebrew_cask_packages:
+- firefox
+- visual-studio-code
+- spectacle
+- iterm2
+
+pip_packages: []

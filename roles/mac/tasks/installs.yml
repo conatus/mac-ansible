@@ -1,0 +1,34 @@
+- name: Add Homebrew taps
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ homebrew_taps }}"
+
+- name: Update Homebrew
+  homebrew:
+    update_homebrew: yes
+
+- name: Uninstall Homebrew packages
+  homebrew:
+    name: "{{ item }}"
+    state: absent
+  loop: "{{ homebrew_package_removals }}"
+
+- name: Install Homebrew packages
+  homebrew:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ homebrew_packages }}"
+
+- name: Uninstall Homebrew Casks
+  homebrew_cask:
+    name: "{{ item }}"
+    state: absent
+  loop: "{{ homebrew_cask_removals }}"
+
+- name: Install Homebrew Cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    install_options: "appdir=/Applications"
+  loop: "{{ homebrew_cask_packages }}"
