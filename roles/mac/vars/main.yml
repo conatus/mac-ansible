@@ -6,6 +6,7 @@ homebrew_package_removals: []
 homebrew_packages:
 - python
 - git
+- tree
 
 homebrew_cask_removals: []
 
@@ -14,5 +15,6 @@ homebrew_cask_packages:
 - visual-studio-code
 - spectacle
 - iterm2
+- spotify
 
 pip_packages: []
