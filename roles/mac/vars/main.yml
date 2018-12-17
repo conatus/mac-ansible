@@ -12,6 +12,7 @@ homebrew_cask_removals: []
 
 homebrew_cask_packages:
 - firefox
+- flux
 - github
 - iterm2
 - slack
