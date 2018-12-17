@@ -11,6 +11,7 @@ homebrew_packages:
 homebrew_cask_removals: []
 
 homebrew_cask_packages:
+- docker
 - firefox
 - flux
 - github
