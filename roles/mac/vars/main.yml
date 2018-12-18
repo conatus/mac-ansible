@@ -17,6 +17,7 @@ homebrew_cask_packages:
 - github
 - iterm2
 - keybase
+- libreoffice
 - signal
 - slack
 - spectacle
