@@ -23,5 +23,6 @@ homebrew_cask_packages:
 - spectacle
 - spotify
 - visual-studio-code
+- whatsapp
 
 pip_packages: []
