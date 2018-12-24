@@ -1,0 +1,4 @@
+- name: Change user shell to ZSH
+  command: chsh -s /bin/zsh "{{ ansible_user_id }}"
+  become: yes
+  become_user: root
