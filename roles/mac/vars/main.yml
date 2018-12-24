@@ -22,6 +22,7 @@ homebrew_cask_packages:
 - slack
 - spectacle
 - spotify
+- steam
 - visual-studio-code
 - whatsapp
 
