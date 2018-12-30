@@ -1,0 +1,36 @@
+# Regular key bindings
+bindkey "^K" kill-whole-line
+bindkey "^R" history-incremental-search-backward
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
+
+# Run git status
+alias s='git status'
+
+# Run git log
+alias l='git log'
+
+# Reload .zshrc
+function zr () {
+  source $HOME/.zshrc
+}
+
+function killport () {
+  lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
+}
+
+function internet {
+  if (ping -c 3 -t 3 google.com > /dev/null 2>&1)
+  then
+    echo 'Internet available.'
+  else
+    echo 'No internet up.'
+  fi
+}
+
+# Ensure NVM works correctly
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
