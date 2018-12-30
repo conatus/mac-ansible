@@ -312,3 +312,15 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 
 echo "Prevent Time Machine from prompting to use new hard drives as backup volume"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+
+###############################################################################
+# TextEdit                                                                    #
+###############################################################################
+
+echo "Use plain text mode for new TextEdit documents"
+defaults write com.apple.TextEdit RichText -int 0
+
+echo "Open and save files as UTF-8 in TextEdit"
+defaults write com.apple.TextEdit PlainTextEncoding -int 4
+defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
