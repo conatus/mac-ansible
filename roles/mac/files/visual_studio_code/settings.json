@@ -4,5 +4,6 @@
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "git.autofetch": true,
-    "workbench.iconTheme": "vs-minimal"
+    "workbench.iconTheme": "vs-minimal",
+    "python.pythonPath": "/usr/local/bin/python3"
 }
