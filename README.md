@@ -8,3 +8,13 @@ Inspired by the work of [Adam Chainz](https://github.com/adamchainz/mac-ansible)
 2. Use Brew to install Python: `brew install python`.
 3. Install Ansible using Pip: `pip3 install ansible`.
 4. Run playfile: `ansible-playbook playbook.yml`.
+
+## Workarounds
+
+Due [to](https://github.com/adamchainz/mac-ansible/issues/2) run:
+
+```
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string `pwd`/roles/mac/files/iterm2
+```
+
+Before running the playbook from scratch.

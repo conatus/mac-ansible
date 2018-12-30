@@ -30,3 +30,12 @@
   tags:
   - visual_studio_code
   - settings
+
+- name: iTerm custom settings file
+  osx_defaults:
+    domain: com.googlecode.iterm2
+    key: PrefsCustomFolder
+    string: "{{ role_path }}/files/iterm2"
+  tags:
+  - iterm2
+  - settings
