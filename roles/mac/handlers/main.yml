@@ -1,4 +1,4 @@
-- name: Kill Mac OS X dock
+- name: Kill Mac OS X Dock
   command: killall Dock
   listen: "restart Mac OS services"
 
