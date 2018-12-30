@@ -34,3 +34,10 @@ source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+export SPACESHIP_CHAR_SYMBOL="> "
+export SPACESHIP_TIME_SHOW=true
+export SPACESHIP_HOST_SHOW=true
+export SPACESHIP_USER_SHOW=needed
+export SPACESHIP_USER_PREFIX=''
+export SPACESHIP_DIR_PREFIX=''
