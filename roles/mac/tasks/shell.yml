@@ -1,4 +1,21 @@
-- name: Change user shell to ZSH
-  command: chsh -s /bin/zsh "{{ ansible_user_id }}"
-  become: yes
-  become_user: root
+# - name: Change shell to ZSH
+#   shell: chsh -s /bin/zsh
+
+- name: Install zsh-nvm to make NVM and ZSH interop easier
+  git:
+    repo: https://github.com/lukechilds/zsh-nvm.git
+    dest: ~/.zsh-nvm
+    update: yes
+
+- name: Dotfiles in place
+  file:
+    src: "{{ role_path }}/files/dotfiles/{{ item }}"
+    path: "~/.{{ item }}"
+    state: link
+  loop:
+  - zshrc
+
+# TODO: Fix this - this is an ugly methodology, but is more simple
+# when NVM is in the frame
+# - name: Install Spaceship prompt
+#   shell: npm install -g spaceship-prompt
