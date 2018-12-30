@@ -19,10 +19,6 @@ sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 echo "Reveal IP address, hostname, OS version, etc. when clicking the clock"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-echo "Enable HiDPI display modes (requires restart)"
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
-
-
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
