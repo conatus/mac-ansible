@@ -1,0 +1,7 @@
+- name: Kill Mac OS X dock
+  command: killall Dock
+  listen: "restart Mac OS services"
+
+- name: Kill Mac OS X Finder
+  command: killall Finder
+  listen: "restart Mac OS services"

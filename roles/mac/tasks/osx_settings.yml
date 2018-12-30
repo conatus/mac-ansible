@@ -1,0 +1,4 @@
+# TODO: Run as root, capturing the sudo password at the start of the playbook
+- name: Run .osx dotfiles
+  shell: "{{ role_path }}/files/osx/osx.sh"
+  notify: "restart Mac OS services"
