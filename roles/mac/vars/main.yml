@@ -6,6 +6,7 @@ homebrew_package_removals: []
 
 homebrew_packages:
 - git
+- pwgen
 - python
 - tree
 
