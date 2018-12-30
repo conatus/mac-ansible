@@ -230,6 +230,15 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 echo "Add iOS Simulator to Launchpad"
 ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
 
+echo "Remove the auto-hiding Dock delay"
+defaults write com.apple.dock autohide-delay -float 0
+
+echo "Remove the animation when hiding/showing the Dock"
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+echo "Automatically hide and show the Dock"
+defaults write com.apple.dock autohide -bool true
+
 # Hot corners
 
 echo "Top left screen corner → Mission Control"
