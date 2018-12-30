@@ -2,22 +2,27 @@
 
 # ~/.osx — http://mths.be/osx
 
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+if [[ $EUID -ne 0 ]]; then
+  RUN_AS_ROOT=false
+  printf "Certain commands will not be run without sudo privileges. To run as root, run the same command prepended with 'sudo', for example: $ sudo $0\n\n" | fold -s -w 80
+else
+  RUN_AS_ROOT=true
+  # Update existing `sudo` timestamp until `.osx` has finished
+  while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+fi
 
 ###############################################################################
 # Settings requiring superuser                                                #
 ###############################################################################
 
-echo "Enable access for assistive devices"
-echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
-sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
+if [[ "$RUN_AS_ROOT" = true ]]; then
+    echo "Enable access for assistive devices"
+    echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
+    sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 
-echo "Reveal IP address, hostname, OS version, etc. when clicking the clock"
-sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+    echo "Reveal IP address, hostname, OS version, etc. when clicking the clock"
+    sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+fi
 
 ###############################################################################
 # General UI/UX                                                               #
