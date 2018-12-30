@@ -373,15 +373,3 @@ defaults write org.m0k.transmission WarningDonate -bool false
 
 echo "Hide the legal disclaimer"
 defaults write org.m0k.transmission WarningLegal -bool false
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
-	"Mail" "Safari" "SizeUp" "SystemUIServer" "Transmission" \
-	"Twitter" "iCal" "iTunes"; do
-	killall "$app" > /dev/null 2>&1
-done
-
-echo "Done. Note that some of these changes require a logout/restart to take effect."
