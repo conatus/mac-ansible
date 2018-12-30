@@ -1,5 +1,6 @@
 homebrew_taps:
 - homebrew/cask
+- caskroom/fonts
 
 homebrew_package_removals: []
 
@@ -14,6 +15,7 @@ homebrew_cask_packages:
 - docker
 - firefox
 - flux
+- font-fira-code
 - github
 - iterm2
 - keybase
