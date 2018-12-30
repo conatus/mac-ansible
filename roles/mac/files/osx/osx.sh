@@ -181,11 +181,6 @@ chflags nohidden ~/Library
 echo "Display full POSIX path as Finder window title"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
-echo "Remove Dropbox’s green checkmark icons in Finder"
-file=/Applications/Dropbox.app/Contents/Resources/check.icns
-[ -e "$file" ] && mv -f "$file" "$file.bak"
-unset file
-
 ###############################################################################
 # Dock & hot corners                                                          #
 ###############################################################################
@@ -275,15 +270,6 @@ echo "Enable the WebKit Developer Tools in the Mac App Store"
 defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 
 ###############################################################################
-# Chrome                                                                      #
-###############################################################################
-
-echo "Using the system-native print preview dialog in Chrome"
-defaults write com.google.Chrome DisablePrintPreview -bool true
-defaults write com.google.Chrome.canary DisablePrintPreview -bool true
-
-
-###############################################################################
 # iTunes                                                                      #
 ###############################################################################
 
@@ -303,73 +289,8 @@ echo "Make ⌘ + F focus the search input in iTunes"
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
 ###############################################################################
-# Mail                                                                        #
-###############################################################################
-
-echo "Disable send and reply animations in Mail.app"
-defaults write com.apple.Mail DisableReplyAnimations -bool true
-defaults write com.apple.Mail DisableSendAnimations -bool true
-
-echo "Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app"
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-echo "Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app"
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
-
-###############################################################################
 # Time Machine                                                                #
 ###############################################################################
 
 echo "Prevent Time Machine from prompting to use new hard drives as backup volume"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-echo "Disable local Time Machine backups"
-hash tmutil &> /dev/null && sudo tmutil disablelocal
-
-###############################################################################
-# Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
-###############################################################################
-
-echo "Enable the debug menu in Address Book"
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
-
-echo "Enable Dashboard dev mode (allows keeping widgets on the desktop)"
-defaults write com.apple.dashboard devmode -bool true
-
-echo "Enable the debug menu in iCal (pre-10.8)"
-defaults write com.apple.iCal IncludeDebugMenu -bool true
-
-echo "Use plain text mode for new TextEdit documents"
-defaults write com.apple.TextEdit RichText -int 0
-
-echo "Open and save files as UTF-8 in TextEdit"
-defaults write com.apple.TextEdit PlainTextEncoding -int 4
-defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
-
-echo "Enable the debug menu in Disk Utility"
-defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
-defaults write com.apple.DiskUtility advanced-image-options -bool true
-
-###############################################################################
-# Google Chrome & Google Chrome Canary                                        #
-###############################################################################
-
-echo "Allow installing user scripts via GitHub or gists"
-defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*"
-defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*"
-
-###############################################################################
-# Transmission.app                                                            #
-###############################################################################
-
-echo "Don’t prompt for confirmation before downloading"
-defaults write org.m0k.transmission DownloadAsk -bool false
-
-echo "Trash original torrent files"
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-echo "Hide the donate message"
-defaults write org.m0k.transmission WarningDonate -bool false
-
-echo "Hide the legal disclaimer"
-defaults write org.m0k.transmission WarningLegal -bool false
