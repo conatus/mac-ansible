@@ -18,3 +18,14 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string `pwd`/roles/mac/f
 ```
 
 Before running the playbook from scratch.
+
+After running for the first time you will need to manually install Spaceship Prompt and rerun the playbook with the shell tag.
+
+```
+npm install -g spaceship-prompt && rm ~/.zshrc
+ansible-playbook playbook.yml --tags=shell
+```
+
+See [issue for further details](https://github.com/conatus/mac-ansible/issues/4).
+
+
