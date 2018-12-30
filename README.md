@@ -11,7 +11,7 @@ Inspired by the work of [Adam Chainz](https://github.com/adamchainz/mac-ansible)
 
 ## Workarounds
 
-Due [to](https://github.com/adamchainz/mac-ansible/issues/2) run:
+[Due to](https://github.com/adamchainz/mac-ansible/issues/2) run:
 
 ```
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string `pwd`/roles/mac/files/iterm2
