@@ -15,3 +15,5 @@
 
 - name: Setup shell
   import_tasks: shell.yml
+  tags:
+  - shell
