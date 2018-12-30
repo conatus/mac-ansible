@@ -323,3 +323,25 @@ defaults write com.apple.TextEdit RichText -int 0
 echo "Open and save files as UTF-8 in TextEdit"
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
+###############################################################################
+# Mac App Store                                                               #
+###############################################################################
+
+echo "Enable the automatic update check"
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+
+echo "Check for software updates daily, not just once per week"
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+echo "Download newly available updates in background"
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+
+echo "Install System data files & security updates"
+defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+
+echo "Turn on app auto-update"
+defaults write com.apple.commerce AutoUpdate -bool true
+
+echo "Allow the App Store to reboot machine on macOS updates"
+defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
