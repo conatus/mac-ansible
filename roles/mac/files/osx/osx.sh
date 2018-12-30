@@ -9,6 +9,21 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
+# Settings requiring superuser                                                #
+###############################################################################
+
+echo "Enable access for assistive devices"
+echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
+sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
+
+echo "Reveal IP address, hostname, OS version, etc. when clicking the clock"
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+echo "Enable HiDPI display modes (requires restart)"
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+
+###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
 
@@ -45,9 +60,6 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 echo "Set Help Viewer windows to non-floating mode"
 defaults write com.apple.helpviewer DevMode -bool true
 
-echo "Reveal IP address, hostname, OS version, etc. when clicking the clock"
-sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
-
 echo "Restart automatically if the computer freezes"
 systemsetup -setrestartfreeze on
 
@@ -63,10 +75,6 @@ defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
 
 echo "Enable keyboard access for all controls"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-echo "Enable access for assistive devices"
-echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
-sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 
 echo "Enable scroll gesture with the Ctrl (^) modifier key to zoom"
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -107,9 +115,6 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 echo "Enable subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
-echo "Enable HiDPI display modes (requires restart)"
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder                                                                      #
