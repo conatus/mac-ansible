@@ -1,5 +1,5 @@
-# - name: Change shell to ZSH
-#   shell: chsh -s /bin/zsh
+- name: Change shell to ZSH
+  shell: chsh -s /bin/zsh
 
 - name: Install zsh-nvm to make NVM and ZSH interop easier
   git:
