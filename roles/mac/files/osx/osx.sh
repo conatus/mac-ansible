@@ -100,6 +100,9 @@ echo "Setting trackpad & mouse speed to a reasonable number"
 defaults write -g com.apple.trackpad.scaling 2
 defaults write -g com.apple.mouse.scaling 2.5
 
+echo "Unload Game Center daemon"
+launchctl unload /System/Library/LaunchAgents/com.apple.gamed.plist 2> /dev/null
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
