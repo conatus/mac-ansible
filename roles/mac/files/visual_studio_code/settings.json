@@ -5,5 +5,6 @@
     "workbench.statusBar.visible": false,
     "git.autofetch": true,
     "workbench.iconTheme": "vs-minimal",
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "terminal.integrated.shell.osx": "/bin/zsh"
 }
