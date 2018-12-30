@@ -345,3 +345,10 @@ defaults write com.apple.commerce AutoUpdate -bool true
 
 echo "Allow the App Store to reboot machine on macOS updates"
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
+
+###############################################################################
+# Photos                                                                      #
+###############################################################################
+
+echo "Prevent Photos from opening automatically when devices are plugged in"
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
