@@ -190,6 +190,15 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
+
+echo "Expand the following File Info panes:"
+echo "“General”, “Open with”, and “Sharing & Permissions”"
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+  General -bool true \
+  OpenWith -bool true \
+  Preview -bool false \
+    Privileges -bool true
+
 ###############################################################################
 # Dock & hot corners                                                          #
 ###############################################################################
