@@ -313,7 +313,6 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 echo "Prevent Time Machine from prompting to use new hard drives as backup volume"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-
 ###############################################################################
 # TextEdit                                                                    #
 ###############################################################################
