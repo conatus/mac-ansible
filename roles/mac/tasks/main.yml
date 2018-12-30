@@ -3,6 +3,9 @@
 
 - name: Install software
   import_tasks: installs.yml
+  tags:
+  - brew
+  - installs
 
 - name: Set application settings
   import_tasks: application_settings.yml
