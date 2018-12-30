@@ -13,6 +13,7 @@ homebrew_packages:
 homebrew_cask_removals: []
 
 homebrew_cask_packages:
+- airmail-beta
 - docker
 - firefox
 - flux
