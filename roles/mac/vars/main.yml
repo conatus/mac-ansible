@@ -30,9 +30,9 @@ homebrew_cask_packages:
 
 pip_packages: []
 
-vscode_config_path: Library/Application Support/Code
-vscode_settings_path: "~{{ ansible_user }}/{{ vscode_config_path }}/User/settings.json"
+visual_studio_code_config_path: Library/Application Support/Code
+visual_studio_code_settings_path: "~{{ ansible_user }}/{{ visual_studio_code_config_path }}/User/settings.json"
 
-vscode_extensions:
+visual_studio_code_extensions:
 - ms-python.python
 - vscoss.vscode-ansible
