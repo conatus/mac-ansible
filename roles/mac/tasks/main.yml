@@ -1,5 +1,8 @@
 - name: Setup SSH
   import_tasks: ssh.yml
 
-- name: Setup software
+- name: Install software
   import_tasks: installs.yml
+
+- name: Set application settings
+  import_tasks: application_settings.yml

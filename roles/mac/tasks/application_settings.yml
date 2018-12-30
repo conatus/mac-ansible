@@ -1,0 +1,32 @@
+- stat:
+    path: "{{ vscode_settings_path }}"
+  register: vscode_settings_file
+  tags:
+  - vscode
+  - settings
+
+- name: Remove VSCode settings.json if not symlink
+  file:
+    path: "{{ vscode_settings_path }}"
+    state: absent
+  when: vscode_settings_file.stat.islnk is defined and vscode_settings_file.stat.islnk == False
+  tags:
+  - vscode
+  - settings
+
+- name: VS Code settings in place
+  file:
+    src: "{{ role_path }}/files/vscode/settings.json"
+    dest: "{{ vscode_settings_path }}"
+    state: link
+  tags:
+  - vscode
+  - settings
+
+- name: VS Code extensions installed
+  visual_studio_code_install_extension:
+    name: "{{ item }}"
+  loop: "{{ vscode_extensions }}"
+  tags:
+  - vscode
+  - settings

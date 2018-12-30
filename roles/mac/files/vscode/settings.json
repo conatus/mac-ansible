@@ -1,0 +1,8 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "git.autofetch": true,
+    "workbench.iconTheme": "vs-minimal"
+}
