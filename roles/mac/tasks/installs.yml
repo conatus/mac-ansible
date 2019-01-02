@@ -3,28 +3,44 @@
     name: "{{ item }}"
     state: present
   loop: "{{ homebrew_taps }}"
+  tags:
+  - brew
+  - installs
 
 - name: Update Homebrew
   homebrew:
     update_homebrew: yes
+  tags:
+  - brew
+  - installs
 
 - name: Uninstall Homebrew packages
   homebrew:
     name: "{{ item }}"
     state: absent
   loop: "{{ homebrew_package_removals }}"
+  tags:
+  - brew
+  - installs
 
 - name: Install Homebrew packages
   homebrew:
     name: "{{ item }}"
     state: latest
   loop: "{{ homebrew_packages }}"
+  tags:
+  - brew
+  - installs
 
 - name: Uninstall Homebrew Casks
   homebrew_cask:
     name: "{{ item }}"
     state: absent
   loop: "{{ homebrew_cask_removals }}"
+  tags:
+  - brew
+  - cask
+  - installs
 
 - name: Install Homebrew Cask packages
   homebrew_cask:
@@ -32,6 +48,10 @@
     state: present
     install_options: "appdir=/Applications"
   loop: "{{ homebrew_cask_packages }}"
+  tags:
+  - brew
+  - cask
+  - installs
 
 - name: Install nvm
   shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -40,6 +60,9 @@
     creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
     executable: /bin/bash
     warn: False
+  tags:
+  - nodejs
+  - installs
 
 - name: Install Node.js versions
   shell: >
@@ -50,3 +73,6 @@
     creates: "{{ ansible_env.HOME }}/.nvm/versions/{{ item }}"
   loop:
   - node
+  tags:
+  - nodejs
+  - installs
