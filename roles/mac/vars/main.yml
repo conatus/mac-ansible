@@ -15,6 +15,7 @@ homebrew_cask_removals: []
 homebrew_cask_packages:
 - airmail-beta
 - docker
+- expressvpn
 - firefox
 - flux
 - font-fira-code
