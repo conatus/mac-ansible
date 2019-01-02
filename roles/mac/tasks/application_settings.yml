@@ -30,6 +30,7 @@
   tags:
   - visual_studio_code
   - settings
+  - extensions
 
 - name: iTerm custom settings file
   osx_defaults:

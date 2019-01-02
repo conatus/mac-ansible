@@ -8,5 +8,7 @@
     "python.pythonPath": "/usr/local/bin/python3",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "prettier.eslintIntegration": true,
+    "editor.formatOnSave": true
 }
