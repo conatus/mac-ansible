@@ -1,35 +1,36 @@
 homebrew_taps:
-- homebrew/cask
-- caskroom/fonts
+  - homebrew/cask
+  - caskroom/fonts
 
 homebrew_package_removals: []
 
 homebrew_packages:
-- git
-- pwgen
-- python
-- tree
+  - git
+  - lastpass-cli
+  - pwgen
+  - python
+  - tree
 
 homebrew_cask_removals: []
 
 homebrew_cask_packages:
-- airmail-beta
-- docker
-- expressvpn
-- firefox
-- flux
-- font-fira-code
-- github
-- iterm2
-- keybase
-- libreoffice
-- signal
-- slack
-- spectacle
-- spotify
-- steam
-- visual-studio-code
-- whatsapp
+  - airmail-beta
+  - docker
+  - expressvpn
+  - firefox
+  - flux
+  - font-fira-code
+  - github
+  - iterm2
+  - keybase
+  - libreoffice
+  - signal
+  - slack
+  - spectacle
+  - spotify
+  - steam
+  - visual-studio-code
+  - whatsapp
 
 pip_packages: []
 
@@ -37,6 +38,6 @@ visual_studio_code_config_path: Library/Application Support/Code
 visual_studio_code_settings_path: "~{{ ansible_user }}/{{ visual_studio_code_config_path }}/User/settings.json"
 
 visual_studio_code_extensions:
-- ms-python.python
-- vscoss.vscode-ansible
-- esbenp.prettier-vscode
+  - ms-python.python
+  - vscoss.vscode-ansible
+  - esbenp.prettier-vscode
