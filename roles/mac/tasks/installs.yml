@@ -37,6 +37,9 @@
     name: yarn
     state: latest
     install_options: without
+  tags:
+    - nodejs
+    - installs
 
 - name: Uninstall Homebrew Casks
   homebrew_cask:
