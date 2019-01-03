@@ -32,6 +32,12 @@
   - brew
   - installs
 
+- name: Install Yarn
+  homebrew:
+    name: yarn
+    state: latest
+    install_options: without
+
 - name: Uninstall Homebrew Casks
   homebrew_cask:
     name: "{{ item }}"
