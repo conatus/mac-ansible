@@ -31,6 +31,7 @@ homebrew_cask_packages:
   - steam
   - tableplus
   - transmission
+  - virtualbox
   - visual-studio-code
   - whatsapp
 
