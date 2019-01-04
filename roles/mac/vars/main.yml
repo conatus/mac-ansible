@@ -33,6 +33,7 @@ homebrew_cask_packages:
   - transmission
   - virtualbox
   - visual-studio-code
+  - vlc
   - whatsapp
 
 pip_packages: []
