@@ -79,9 +79,8 @@
   args:
     executable: /bin/bash
     chdir: "{{ ansible_env.HOME }}"
-    creates: "{{ ansible_env.HOME }}/.nvm/versions/{{ item }}"
-  loop:
-    - node
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/node/{{ item }}*"
+  loop: "{{ nodejs_versions }}"
   tags:
     - nodejs
     - installs

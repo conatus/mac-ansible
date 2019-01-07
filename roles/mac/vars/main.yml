@@ -38,6 +38,14 @@ homebrew_cask_packages:
 
 pip_packages: []
 
+nodejs_versions:
+  # Maximum version available on AWS Lambda
+  - v8.10
+  # Current LTS
+  - v10.15
+  # Current version
+  - v11.6
+
 visual_studio_code_config_path: Library/Application Support/Code
 visual_studio_code_settings_path: "~{{ ansible_user }}/{{ visual_studio_code_config_path }}/User/settings.json"
 
