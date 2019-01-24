@@ -27,6 +27,7 @@ homebrew_cask_packages:
   - keybase
   - libreoffice
   - signal
+  - sketch
   - slack
   - spectacle
   - spotify
