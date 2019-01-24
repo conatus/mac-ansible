@@ -15,14 +15,13 @@ homebrew_cask_removals: []
 
 homebrew_cask_packages:
   - airmail-beta
-  - chrome
-  - chrome-canary
   - docker
   - expressvpn
   - firefox
   - flux
   - font-fira-code
   - github
+  - google-chrome
   - iterm2
   - keybase
   - libreoffice
