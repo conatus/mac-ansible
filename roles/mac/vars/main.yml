@@ -57,3 +57,4 @@ visual_studio_code_extensions:
   - ms-python.python
   - vscoss.vscode-ansible
   - esbenp.prettier-vscode
+  - flowtype.flow-for-vscode
