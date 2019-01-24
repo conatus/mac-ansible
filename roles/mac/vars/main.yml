@@ -37,6 +37,7 @@ homebrew_cask_packages:
   - visual-studio-code
   - vlc
   - whatsapp
+  - zoomus
 
 pip_packages: []
 
