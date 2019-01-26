@@ -14,6 +14,7 @@ homebrew_packages:
 homebrew_cask_removals: []
 
 homebrew_cask_packages:
+  - ableton-live-standard9
   - abstract
   - airmail-beta
   - docker
