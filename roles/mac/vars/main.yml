@@ -16,7 +16,7 @@ homebrew_cask_removals: []
 homebrew_cask_packages:
   - ableton-live-standard9
   - abstract
-  - airmail-beta
+  # - airmail-beta
   - android-platform-tools
   - avast-security
   - docker
@@ -65,3 +65,4 @@ visual_studio_code_extensions:
   - vscoss.vscode-ansible
   - esbenp.prettier-vscode
   - flowtype.flow-for-vscode
+  - yzhang.markdown-all-in-one
