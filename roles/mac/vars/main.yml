@@ -16,7 +16,7 @@ homebrew_cask_removals: []
 homebrew_cask_packages:
   - ableton-live-standard9
   - abstract
-  # - airmail-beta
+  - airmail-beta
   - android-platform-tools
   - avast-security
   - docker
