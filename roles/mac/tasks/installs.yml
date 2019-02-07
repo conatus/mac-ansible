@@ -84,3 +84,11 @@
   tags:
     - nodejs
     - installs
+
+- name: Install pip packages
+  pip:
+    name: "{{ pip_packages }}"
+    state: latest
+  tags:
+    - pip
+    - installs

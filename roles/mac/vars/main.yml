@@ -47,7 +47,8 @@ homebrew_cask_packages:
   - zeplin
   - zoomus
 
-pip_packages: []
+pip_packages:
+  - passlib
 
 nodejs_versions:
   # Maximum version available on AWS Lambda
