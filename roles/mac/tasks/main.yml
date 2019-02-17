@@ -4,8 +4,13 @@
 - name: Install software
   import_tasks: installs.yml
   tags:
-  - brew
-  - installs
+    - brew
+    - installs
+
+- name: Install and setup development environments
+  import_tasks:
+  tags:
+    - installs
 
 - name: Set application settings
   import_tasks: application_settings.yml
@@ -16,4 +21,4 @@
 - name: Setup shell
   import_tasks: shell.yml
   tags:
-  - shell
+    - shell

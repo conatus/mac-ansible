@@ -1,0 +1,39 @@
+- name: Install Yarn
+  homebrew:
+    name: yarn
+    state: latest
+    install_options: without-node
+  tags:
+    - nodejs
+    - installs
+
+- name: Install nvm
+  shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  args:
+    chdir: "{{ ansible_env.HOME }}"
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+    executable: /bin/bash
+    warn: False
+  tags:
+    - nodejs
+    - installs
+
+- name: Install Node.js versions
+  shell: >
+    . {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install {{ item }}
+  args:
+    executable: /bin/bash
+    chdir: "{{ ansible_env.HOME }}"
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/node/{{ item }}*"
+  loop: "{{ nodejs_versions }}"
+  tags:
+    - nodejs
+    - installs
+
+- name: Install pip packages
+  pip:
+    name: "{{ pip_packages }}"
+    state: latest
+  tags:
+    - pip
+    - installs
