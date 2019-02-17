@@ -27,5 +27,3 @@ ansible-playbook playbook.yml --tags=shell
 ```
 
 See [issue for further details](https://github.com/conatus/mac-ansible/issues/4).
-
-
