@@ -4,5 +4,6 @@ mas_apps:
   - { id: 409201541, name: "Pages (7.3)" }
   - { id: 682658836, name: "GarageBand (10.3.2)" }
   - { id: 409203825, name: "Numbers (5.3)" }
+  - { id: 1225570693, name: "Ulysses (14.4)" }
 
 mas_upgrade_all_apps: no
