@@ -1,0 +1,49 @@
+homebrew_taps:
+  - homebrew/cask
+  - caskroom/fonts
+
+homebrew_packages:
+  - git
+  - lastpass-cli
+  - pwgen
+  - python
+  - tree
+
+homebrew_package_removals: []
+
+homebrew_cask_packages:
+  - ableton-live-standard9
+  - abstract
+  - airmail-beta
+  - android-platform-tools
+  - avast-security
+  - docker
+  - expressvpn
+  - firefox
+  - flux
+  - font-fira-code
+  - github
+  - google-chrome
+  - iterm2
+  - java
+  - keybase
+  - libreoffice
+  - nvalt
+  - riot
+  - signal
+  - sketch
+  - slack
+  - spectacle
+  - spotify
+  - steam
+  - tableplus
+  - transmission
+  - vagrant
+  - virtualbox
+  - visual-studio-code
+  - vlc
+  - whatsapp
+  - zeplin
+  - zoomus
+
+homebrew_cask_removals: []
