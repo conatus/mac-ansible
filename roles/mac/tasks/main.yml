@@ -8,7 +8,7 @@
     - installs
 
 - name: Install and setup development environments
-  import_tasks:
+  import_tasks: development_environments.yml
   tags:
     - installs
 
