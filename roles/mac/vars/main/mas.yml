@@ -1,0 +1,8 @@
+mas_apps:
+  - { id: 408981434, name: "Keynote (8.3)" }
+  - { id: 409183694, name: "Keynote (8.3)" }
+  - { id: 409201541, name: "Pages (7.3)" }
+  - { id: 682658836, name: "GarageBand (10.3.2)" }
+  - { id: 409203825, name: "Numbers (5.3)" }
+
+mas_upgrade_all_apps: no
