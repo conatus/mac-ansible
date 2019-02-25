@@ -1,5 +1,6 @@
-- name: Change shell to ZSH
-  shell: chsh -s /bin/zsh
+# Requires root to run. Disable for the moment.
+# - name: Change shell to ZSH
+#   shell: chsh -s /bin/zsh
 
 - name: Install zsh-nvm to make NVM and ZSH interop easier
   git:
@@ -13,8 +14,7 @@
     path: "~/.{{ item }}"
     state: link
   loop:
-  - zshrc
-
+    - zshrc
 # TODO: Fix this - this is an ugly methodology, but is more simple
 # when NVM is in the frame
 # - name: Install Spaceship prompt
