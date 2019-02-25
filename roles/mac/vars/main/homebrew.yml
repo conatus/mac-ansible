@@ -1,8 +1,10 @@
 homebrew_taps:
   - homebrew/cask
   - caskroom/fonts
+  - buildkite/cli
 
 homebrew_packages:
+  - bk
   - git
   - lastpass-cli
   - pwgen
