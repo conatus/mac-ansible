@@ -5,6 +5,7 @@ homebrew_taps:
 
 homebrew_packages:
   - bk
+  - buildkite-agent
   - git
   - lastpass-cli
   - pwgen
