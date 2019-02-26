@@ -9,6 +9,7 @@ homebrew_packages:
   - buildkite-agent
   - git
   - lastpass-cli
+  - mariadb
   - pwgen
   - python
   - tree
