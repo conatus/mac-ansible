@@ -7,9 +7,12 @@ homebrew_taps:
 homebrew_packages:
   - bk
   - buildkite-agent
+  - dnsmasq
   - git
   - lastpass-cli
   - mariadb
+  - nginx
+  - php
   - pwgen
   - python
   - tree
