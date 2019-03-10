@@ -37,3 +37,9 @@
   tags:
     - pip
     - installs
+
+- name: Install Laravel Valet
+  composer:
+    command: require
+    global_command: yes
+    arguments: laravel/valet
