@@ -2,8 +2,8 @@
     path: "{{ visual_studio_code_settings_path }}"
   register: visual_studio_code_settings_file
   tags:
-  - visual_studio_code
-  - settings
+    - visual_studio_code
+    - settings
 
 - name: Remove Visual Studio Code settings.json if not symlink
   file:
@@ -11,8 +11,8 @@
     state: absent
   when: visual_studio_code_settings_file.stat.islnk is defined and visual_studio_code_settings_file.stat.islnk == False
   tags:
-  - visual_studio_code
-  - settings
+    - visual_studio_code
+    - settings
 
 - name: Visual Studio Code settings in place
   file:
@@ -20,17 +20,17 @@
     dest: "{{ visual_studio_code_settings_path }}"
     state: link
   tags:
-  - visual_studio_code
-  - settings
+    - visual_studio_code
+    - settings
 
 - name: Visual Studio Code extensions installed
   visual_studio_code_install_extension:
     name: "{{ item }}"
   loop: "{{ visual_studio_code_extensions }}"
   tags:
-  - visual_studio_code
-  - settings
-  - extensions
+    - visual_studio_code
+    - settings
+    - extensions
 
 - name: iTerm custom settings file
   osx_defaults:
@@ -38,5 +38,5 @@
     key: PrefsCustomFolder
     string: "{{ role_path }}/files/iterm2"
   tags:
-  - iterm2
-  - settings
+    - iterm2
+    - settings
