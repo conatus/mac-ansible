@@ -7,3 +7,4 @@ visual_studio_code_extensions:
   - esbenp.prettier-vscode
   - flowtype.flow-for-vscode
   - yzhang.markdown-all-in-one
+  - peterJausovec.vscode-docker
