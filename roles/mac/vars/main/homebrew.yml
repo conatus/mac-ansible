@@ -26,6 +26,7 @@ homebrew_cask_packages:
   # - airmail-beta
   - android-platform-tools
   - avast-security
+  - cyberduck
   - docker
   - expressvpn
   - firefox
