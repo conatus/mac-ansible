@@ -14,5 +14,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0,
   "editor.minimap.enabled": false,
-  "javascript.validate.enable": false
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
