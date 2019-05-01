@@ -36,6 +36,7 @@ homebrew_cask_packages:
   - github
   - google-chrome
   - iterm2
+  - ngrok
   - java
   - keybase
   - libreoffice
