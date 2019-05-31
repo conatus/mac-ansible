@@ -2,6 +2,7 @@ homebrew_taps:
   - buildkite/buildkite
   - buildkite/cli
   - caskroom/fonts
+  - heroku/brew
   - homebrew/cask
 
 homebrew_packages:
@@ -9,6 +10,7 @@ homebrew_packages:
   - buildkite-agent
   - dnsmasq
   - git
+  - heroku
   - lastpass-cli
   - mariadb
   - nginx
