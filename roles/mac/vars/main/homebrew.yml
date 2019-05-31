@@ -43,6 +43,7 @@ homebrew_cask_packages:
   - keybase
   - libreoffice
   - nvalt
+  - notion
   - riot
   - signal
   - sketch
