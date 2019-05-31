@@ -38,12 +38,12 @@ homebrew_cask_packages:
   - github
   - google-chrome
   - iterm2
-  - ngrok
   - java
   - keybase
   - libreoffice
-  - nvalt
+  - ngrok
   - notion
+  - nvalt
   - riot
   - signal
   - sketch
