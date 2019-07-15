@@ -44,6 +44,7 @@ homebrew_cask_packages:
   - ngrok
   - notion
   - nvalt
+  - pock
   - riot
   - signal
   - sketch
