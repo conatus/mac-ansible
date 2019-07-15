@@ -10,6 +10,12 @@ Inspired by the work of [Adam Chainz](https://github.com/adamchainz/mac-ansible)
 4. Run playfile: `ansible-playbook playbook.yml`.
 5. To install Valet, run `valet install`.
 
+## Common Usage
+
+For the most part you are going to be running:
+
+`ansible-playbook playbook.yml --tags brew`
+
 ## Workarounds
 
 [Due to](https://github.com/adamchainz/mac-ansible/issues/2) run:
