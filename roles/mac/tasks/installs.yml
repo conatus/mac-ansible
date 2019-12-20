@@ -53,6 +53,15 @@
     - cask
     - installs
 
+- name: Install global NPM packages
+  npm:
+    name: "{{ item }}"
+    state: present
+    global: yes
+  loop: "{{ global_npm_packages }}"
+  tags:
+    - npm
+
 - name: Ensure MAS is installed.
   homebrew:
     name: mas
