@@ -6,6 +6,7 @@ homebrew_taps:
   - homebrew/cask
   - exolnet/homebrew-deprecated
   - rockymadden/rockymadden
+  - caffix/amass
 
 homebrew_packages:
   - bk
@@ -30,6 +31,7 @@ homebrew_package_removals:
   - airmail-beta
 
 homebrew_cask_packages:
+  - amass
   - ableton-live-standard9
   - abstract
   - amazon-chime
