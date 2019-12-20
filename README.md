@@ -8,7 +8,7 @@ Inspired by the work of [Adam Chainz](https://github.com/adamchainz/mac-ansible)
 2. Use Brew to install Python: `brew install python`.
 3. Install Ansible using Pip: `pip3 install ansible`.
 4. Run playfile: `ansible-playbook playbook.yml`.
-5. To install Valet, run `valet install`.
+5. To install Valet for developing PHP code on the metal without containers or virtual machines, run `valet install`.
 
 ## Common Usage
 
