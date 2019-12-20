@@ -2,7 +2,7 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": true,
+    "workbench.statusBar.visible": false,
     "git.autofetch": true,
     "workbench.iconTheme": "vs-minimal",
     "python.pythonPath": "/usr/local/bin/python3",
