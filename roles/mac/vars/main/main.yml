@@ -1,5 +1,8 @@
 pip_packages:
   - passlib
+  - cookiecutter
+  - awscli
+  - aws-shell
 
 nodejs_versions:
   # Maximum version available on AWS Lambda
@@ -8,3 +11,6 @@ nodejs_versions:
   - v10.15
   # Current version
   - v11.6
+
+global_npm_packages:
+  - mediumexporter

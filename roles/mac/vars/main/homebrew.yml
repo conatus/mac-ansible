@@ -4,6 +4,8 @@ homebrew_taps:
   - caskroom/fonts
   - heroku/brew
   - homebrew/cask
+  - exolnet/homebrew-deprecated
+  - rockymadden/rockymadden
 
 homebrew_packages:
   - bk
@@ -11,6 +13,8 @@ homebrew_packages:
   - dnsmasq
   - git
   - heroku
+  - jq
+  - jrnl
   - lastpass-cli
   - mariadb
   - nginx
@@ -18,20 +22,24 @@ homebrew_packages:
   - postgresql
   - pwgen
   - python
+  - redis
+  - slack-cli
   - tree
 
-homebrew_package_removals: []
+homebrew_package_removals:
+  - airmail-beta
 
 homebrew_cask_packages:
   - ableton-live-standard9
   - abstract
-  # Airmail install is flakey, disable for the moment
-  # - airmail-beta
+  - amazon-chime
   - android-platform-tools
   - avast-security
   - cyberduck
+  - graphiql
   - docker
   - expressvpn
+  - figma
   - firefox
   - flux
   - font-fira-code
@@ -48,6 +56,7 @@ homebrew_cask_packages:
   - riot
   - signal
   - sketch
+  - skype
   - slack
   - spectacle
   - spotify
