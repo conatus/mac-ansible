@@ -36,7 +36,6 @@ homebrew_cask_packages:
   - abstract
   - amazon-chime
   - android-platform-tools
-  - avast-security
   - cyberduck
   - graphiql
   - docker
