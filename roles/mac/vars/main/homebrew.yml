@@ -31,13 +31,12 @@ homebrew_package_removals:
   - airmail-beta
 
 homebrew_cask_packages:
-  - amass
   - ableton-live-standard9
   - abstract
+  - amass
   - amazon-chime
   - android-platform-tools
   - cyberduck
-  - graphiql
   - docker
   - expressvpn
   - figma
@@ -46,6 +45,7 @@ homebrew_cask_packages:
   - font-fira-code
   - github
   - google-chrome
+  - graphiql
   - iterm2
   - java
   - keybase
@@ -63,6 +63,7 @@ homebrew_cask_packages:
   - spotify
   - steam
   - tableplus
+  - telegram
   - transmission
   - vagrant
   - virtualbox
