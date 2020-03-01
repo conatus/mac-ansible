@@ -38,6 +38,7 @@ homebrew_cask_packages:
   - android-platform-tools
   - cyberduck
   - docker
+  - epic-games
   - expressvpn
   - figma
   - firefox
