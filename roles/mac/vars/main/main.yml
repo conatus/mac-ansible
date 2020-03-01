@@ -3,6 +3,7 @@ pip_packages:
   - cookiecutter
   - awscli
   - aws-shell
+  - pockyt
 
 nodejs_versions:
   # Maximum version available on AWS Lambda
