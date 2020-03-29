@@ -36,6 +36,7 @@ homebrew_cask_packages:
   - amazon-chime
   - android-platform-tools
   - cyberduck
+  - discord
   - docker
   - epic-games
   - expressvpn
