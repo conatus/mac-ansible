@@ -71,6 +71,7 @@ homebrew_cask_packages:
   - visual-studio-code
   - vlc
   - whatsapp
+  - wire
   - zeplin
   - zoomus
 
