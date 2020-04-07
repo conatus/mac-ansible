@@ -58,6 +58,7 @@ homebrew_cask_packages:
   - pock
   - riot
   - signal
+  - sizzy
   - sketch
   - skype
   - slack
