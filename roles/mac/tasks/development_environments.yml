@@ -35,6 +35,7 @@
     name: "{{ pip_packages }}"
     state: latest
   tags:
+    - python
     - pip
     - installs
 
