@@ -14,6 +14,7 @@ homebrew_packages:
   - dnsmasq
   - git
   - heroku
+  - hugo
   - jq
   - jrnl
   - lastpass-cli
