@@ -19,5 +19,6 @@
     "editor.renderWhitespace": "all",
     "editor.trimAutoWhitespace": false,
     "editor.useTabStops": false,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "twig-language.indentStyle": "space"
 }
