@@ -20,5 +20,8 @@
     "editor.trimAutoWhitespace": false,
     "editor.useTabStops": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "twig-language.indentStyle": "space"
+    "twig-language.indentStyle": "space",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
