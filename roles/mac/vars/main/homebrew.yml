@@ -74,6 +74,7 @@ homebrew_cask_packages:
   - vagrant
   - virtualbox
   - visual-studio-code
+  - vivaldi
   - vlc
   - whatsapp
   - wire
