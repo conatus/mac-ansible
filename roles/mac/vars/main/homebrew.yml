@@ -56,6 +56,7 @@ homebrew_cask_packages:
   - java
   - keybase
   - libreoffice
+  - microsoft-teams
   - ngrok
   - notion
   - nvalt
