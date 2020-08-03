@@ -22,6 +22,7 @@ homebrew_packages:
   - nginx
   - nmap
   - php
+  - pipenv
   - postgresql
   - pwgen
   - python
