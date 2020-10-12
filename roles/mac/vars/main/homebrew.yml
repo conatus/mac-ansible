@@ -13,6 +13,7 @@ homebrew_packages:
   - buildkite-agent
   - dnsmasq
   - git
+  - git-lfs
   - heroku
   - hugo
   - jq
