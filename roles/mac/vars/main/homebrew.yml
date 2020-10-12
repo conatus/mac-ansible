@@ -53,6 +53,7 @@ homebrew_cask_packages:
   - github
   - google-chrome
   - graphiql
+  - insomnia
   - iterm2
   - java
   - keybase
