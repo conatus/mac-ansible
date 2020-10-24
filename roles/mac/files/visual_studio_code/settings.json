@@ -9,7 +9,6 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
     "workbench.startupEditor": "newUntitledFile",
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
