@@ -33,7 +33,8 @@ homebrew_packages:
   - speedtest-cli
   - tree
 
-homebrew_package_removals: []
+homebrew_package_removals:
+  - google-chrome
 
 homebrew_cask_packages:
   - ableton-live-standard9
@@ -44,6 +45,7 @@ homebrew_cask_packages:
   - cyberduck
   - discord
   - docker
+  - eloston-chromium
   - epic-games
   - expressvpn
   - figma
@@ -51,7 +53,6 @@ homebrew_cask_packages:
   - flux
   - font-fira-code
   - github
-  - google-chrome
   - graphiql
   - insomnia
   - iterm2
