@@ -1,7 +1,7 @@
 - name: Install Yarn
   homebrew:
     name: yarn
-    state: latest
+    state: present
     install_options: without-node
   tags:
     - nodejs
