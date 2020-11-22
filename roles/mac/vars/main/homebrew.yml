@@ -76,6 +76,7 @@ homebrew_cask_packages:
   - tableplus
   - telegram
   - transmission
+  - universal-media-server
   - vagrant
   - virtualbox
   - visual-studio-code
