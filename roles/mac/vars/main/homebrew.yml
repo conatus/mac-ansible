@@ -63,8 +63,7 @@ homebrew_cask_packages:
   - ngrok
   - notion
   - nvalt
-  - pock
-  - riot
+  - plex
   - signal
   - sizzy
   - sketch
@@ -87,4 +86,6 @@ homebrew_cask_packages:
   - zeplin
   - zoomus
 
-homebrew_cask_removals: []
+homebrew_cask_removals:
+  - pock
+  - riot
