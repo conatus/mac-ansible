@@ -33,8 +33,7 @@ homebrew_packages:
   - speedtest-cli
   - tree
 
-homebrew_package_removals:
-  - google-chrome
+homebrew_package_removals: []
 
 homebrew_cask_packages:
   - ableton-live-standard9
@@ -86,6 +85,4 @@ homebrew_cask_packages:
   - zeplin
   - zoomus
 
-homebrew_cask_removals:
-  - pock
-  - riot
+homebrew_cask_removals: []
