@@ -39,6 +39,7 @@ homebrew_package_removals: []
 
 homebrew_cask_packages:
   - ableton-live-standard9
+  - adobe-creative-cloud
   - abstract
   - amass
   - amazon-chime
