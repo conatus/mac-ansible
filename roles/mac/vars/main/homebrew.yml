@@ -12,6 +12,7 @@ homebrew_packages:
   - bk
   - buildkite-agent
   - dnsmasq
+  - gdal
   - git
   - git-lfs
   - heroku
@@ -19,17 +20,19 @@ homebrew_packages:
   - jq
   - jrnl
   - lastpass-cli
+  - libgeoip
   - mariadb
   - nginx
   - nmap
   - php
   - php@7.4
   - pipenv
+  - postgis
   - postgresql
   - pwgen
   - python
-  - redis
   - rbenv
+  - redis
   - ruby
   - slack-cli
   - speedtest-cli
