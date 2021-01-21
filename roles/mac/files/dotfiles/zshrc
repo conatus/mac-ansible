@@ -67,3 +67,6 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
 # Ruby
 eval "$(rbenv init -)"
+
+# Python
+alias python=/usr/local/bin/python3 
