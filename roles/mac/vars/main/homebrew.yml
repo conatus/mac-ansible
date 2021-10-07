@@ -66,6 +66,7 @@ homebrew_cask_packages:
   - keybase
   - libreoffice
   - microsoft-teams
+  - missive
   - ngrok
   - notion
   - nvalt
