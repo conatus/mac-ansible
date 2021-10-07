@@ -1,8 +1,6 @@
 {
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": false,
     "git.autofetch": true,
     "workbench.iconTheme": "vs-minimal",
     "python.pythonPath": "/usr/local/bin/python3",
@@ -10,7 +8,6 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
     "javascript.validate.enable": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -29,5 +26,21 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.activityBar.visible": false,
+    "prettier.requireConfig": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.statusBar.visible": false
 }
