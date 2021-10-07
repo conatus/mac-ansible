@@ -12,6 +12,7 @@ homebrew_packages:
   - bk
   - buildkite-agent
   - dnsmasq
+  - figlet
   - gdal
   - gh
   - git
