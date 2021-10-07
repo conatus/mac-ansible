@@ -22,6 +22,7 @@ homebrew_packages:
   - lastpass-cli
   - libgeoip
   - mariadb
+  - mpv
   - nginx
   - nmap
   - php
