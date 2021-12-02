@@ -86,6 +86,7 @@ homebrew_cask_packages:
   - tableplus
   - telegram
   - transmission
+  - twist
   - universal-media-server
   - vagrant
   - virtualbox
