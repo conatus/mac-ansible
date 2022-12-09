@@ -61,7 +61,6 @@ homebrew_cask_packages:
   - flux
   - font-fira-code
   - github
-  - graphiql
   - insomnia
   - iterm2
   - keybase
