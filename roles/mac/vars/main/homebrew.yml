@@ -7,22 +7,17 @@ homebrew_taps:
   - caffix/amass
 
 homebrew_packages:
-  - bk
   - dnsmasq
-  - figlet
   - gdal
   - gh
   - git
   - git-lfs
   - heroku
-  - hugo
   - jq
   - jrnl
   - lastpass-cli
   - libgeoip
-  - mariadb
   - mpv
-  - nginx
   - nmap
   - php
   - pipenv
@@ -31,8 +26,6 @@ homebrew_packages:
   - pwgen
   - python
   - rbenv
-  - redis
-  - ruby
   - speedtest-cli
   - tree
 
