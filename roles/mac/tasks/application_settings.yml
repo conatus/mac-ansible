@@ -22,12 +22,11 @@
   tags:
     - visual_studio_code
     - settings
-
-- name: Visual Studio Code extensions installed
-  visual_studio_code_install_extension:
-    name: "{{ item }}"
-  loop: "{{ visual_studio_code_extensions }}"
-  tags:
-    - visual_studio_code
-    - settings
-    - extensions
+# - name: Visual Studio Code extensions installed
+#   visual_studio_code_install_extension:
+#     name: "{{ item }}"
+#   loop: "{{ visual_studio_code_extensions }}"
+#   tags:
+#     - visual_studio_code
+#     - settings
+#     - extensions
