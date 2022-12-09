@@ -61,55 +61,54 @@
   loop: "{{ global_npm_packages }}"
   tags:
     - npm
+# - name: Ensure MAS is installed.
+#   homebrew:
+#     name: mas
+#     state: present
+#   tags:
+#     - installs
+#     - mas
 
-- name: Ensure MAS is installed.
-  homebrew:
-    name: mas
-    state: present
-  tags:
-    - installs
-    - mas
+# - name: Get MAS account status
+#   command: mas account
+#   register: mas_account_result
+#   failed_when: mas_account_result.rc > 1
+#   changed_when: false
+#   tags:
+#     - installs
+#     - mas
 
-- name: Get MAS account status
-  command: mas account
-  register: mas_account_result
-  failed_when: mas_account_result.rc > 1
-  changed_when: false
-  tags:
-    - installs
-    - mas
+# - name: Sign in to MAS when email and password are provided
+#   command: 'mas signin "{{ mas_email }}" "{{ mas_password }}"'
+#   register: mas_signin_result
+#   when:
+#     - mas_account_result.rc == 1
+#     - mas_email
+#     - mas_password
+#   tags:
+#     - installs
+#     - mas
 
-- name: Sign in to MAS when email and password are provided
-  command: 'mas signin "{{ mas_email }}" "{{ mas_password }}"'
-  register: mas_signin_result
-  when:
-    - mas_account_result.rc == 1
-    - mas_email
-    - mas_password
-  tags:
-    - installs
-    - mas
+# - name: List installed MAS apps
+#   command: mas list
+#   register: mas_list
+#   check_mode: no
+#   changed_when: false
+#   tags:
+#     - installs
+#     - mas
 
-- name: List installed MAS apps
-  command: mas list
-  register: mas_list
-  check_mode: no
-  changed_when: false
-  tags:
-    - installs
-    - mas
+# - name: Ensure configured MAS apps are installed
+#   command: mas install "{{ item.id }}"
+#   with_items: "{{ mas_apps }}"
+#   when: (item.id | string) not in mas_list.stdout
+#   tags:
+#     - installs
+#     - mas
 
-- name: Ensure configured MAS apps are installed
-  command: mas install "{{ item.id }}"
-  with_items: "{{ mas_apps }}"
-  when: (item.id | string) not in mas_list.stdout
-  tags:
-    - installs
-    - mas
-
-- name: Upgrade all apps (if configured)
-  command: mas upgrade
-  when: mas_upgrade_all_apps
-  tags:
-    - installs
-    - mas
+# - name: Upgrade all apps (if configured)
+#   command: mas upgrade
+#   when: mas_upgrade_all_apps
+#   tags:
+#     - installs
+#     - mas
