@@ -3,7 +3,6 @@ homebrew_taps:
   - heroku/brew
   - homebrew/cask
   - exolnet/homebrew-deprecated
-  - rockymadden/rockymadden
   - caffix/amass
 
 homebrew_packages:
