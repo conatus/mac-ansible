@@ -87,7 +87,6 @@ homebrew_cask_packages:
   - vivaldi
   - vlc
   - whatsapp
-  - zeplin
   - zoomus
 
 homebrew_cask_removals: []
