@@ -1,6 +1,4 @@
 homebrew_taps:
-  - buildkite/buildkite
-  - buildkite/cli
   - caskroom/fonts
   - heroku/brew
   - homebrew/cask
@@ -10,7 +8,6 @@ homebrew_taps:
 
 homebrew_packages:
   - bk
-  - buildkite-agent
   - dnsmasq
   - figlet
   - gdal
