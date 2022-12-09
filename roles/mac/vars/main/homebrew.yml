@@ -75,7 +75,6 @@ homebrew_cask_packages:
   - transmission
   - twist
   - universal-media-server
-  - virtualbox
   - visual-studio-code
   - vivaldi
   - vlc
