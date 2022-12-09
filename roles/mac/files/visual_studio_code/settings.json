@@ -1,46 +1,49 @@
 {
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "git.autofetch": true,
-    "workbench.iconTheme": "vs-minimal",
-    "python.pythonPath": "/usr/local/bin/python3",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.enabled": false,
-    "javascript.validate.enable": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "terminal.integrated.rendererType": "dom",
-    "editor.renderWhitespace": "all",
-    "editor.trimAutoWhitespace": false,
-    "editor.useTabStops": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "twig-language.indentStyle": "space",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "workbench.activityBar.visible": false,
-    "prettier.requireConfig": true,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.statusBar.visible": false
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "git.autofetch": true,
+  "workbench.iconTheme": "vs-minimal",
+  "python.pythonPath": "/usr/local/bin/python3",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.minimap.enabled": false,
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.rendererType": "dom",
+  "editor.renderWhitespace": "all",
+  "editor.trimAutoWhitespace": false,
+  "editor.useTabStops": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "twig-language.indentStyle": "space",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.activityBar.visible": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.statusBar.visible": false,
+  "git.confirmSync": false
 }
