@@ -61,7 +61,6 @@ homebrew_cask_packages:
   - missive
   - ngrok
   - notion
-  - nvalt
   - signal
   - sizzy
   - sketch
