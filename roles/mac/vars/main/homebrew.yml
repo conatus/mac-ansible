@@ -68,6 +68,7 @@ homebrew_cask_packages:
   - java
   - keybase
   - libreoffice
+  - linear-linear
   - microsoft-teams
   - missive
   - ngrok
