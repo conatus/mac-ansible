@@ -65,7 +65,6 @@ homebrew_cask_packages:
   - graphiql
   - insomnia
   - iterm2
-  - java
   - keybase
   - libreoffice
   - linear-linear
