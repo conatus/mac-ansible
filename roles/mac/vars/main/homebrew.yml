@@ -28,7 +28,6 @@ homebrew_packages:
   - nginx
   - nmap
   - php
-  - php@7.4
   - pipenv
   - postgis
   - postgresql
