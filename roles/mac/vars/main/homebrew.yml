@@ -58,6 +58,7 @@ homebrew_cask_packages:
   - iterm2
   - keybase
   - linear-linear
+  - logseq
   - missive
   - ngrok
   - notion
