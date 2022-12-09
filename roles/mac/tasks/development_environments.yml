@@ -8,7 +8,7 @@
     - installs
 
 - name: Install nvm
-  shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  shell: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
   args:
     chdir: "{{ ansible_env.HOME }}"
     creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
