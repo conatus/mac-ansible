@@ -36,7 +36,6 @@ homebrew_packages:
   - rbenv
   - redis
   - ruby
-  - slack-cli
   - speedtest-cli
   - tree
 
