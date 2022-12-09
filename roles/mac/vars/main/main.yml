@@ -5,33 +5,6 @@ pip_packages:
   - aws-shell
   - pockyt
 
-nodejs_versions:
-  - v10.15
-  - v10.15
-  - v10.15
-  - v10.16
-  - v10.17
-  - v10.20
-  - v11.14
-  - v11.15
-  - v11.6
-  - v11.6
-  - v12.14
-  - v12.16
-  - v12.18
-  - v12.19
-  - v12.7
-  - v12.8
-  - v13.12
-  - v13.7
-  - v14.13
-  - v14.2
-  - v14.5
-  - v14.7
-  - v8.10
-  - v8.10
-  - v8.12
-  - v8.9
+nodejs_versions: []
 
-global_npm_packages:
-  - mediumexporter
+global_npm_packages: []
