@@ -45,7 +45,6 @@ homebrew_package_removals: []
 
 homebrew_cask_packages:
   - ableton-live-standard9
-  - abstract
   - adobe-creative-cloud
   - amass
   - cyberduck
