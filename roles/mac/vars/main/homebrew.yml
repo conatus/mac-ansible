@@ -73,7 +73,6 @@ homebrew_cask_packages:
   - ngrok
   - notion
   - nvalt
-  - obsidian
   - plex
   - plex-media-server
   - signal
