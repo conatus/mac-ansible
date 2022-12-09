@@ -64,7 +64,6 @@ homebrew_cask_packages:
   - iterm2
   - keybase
   - linear-linear
-  - microsoft-teams
   - missive
   - ngrok
   - notion
