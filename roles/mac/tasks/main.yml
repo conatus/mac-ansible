@@ -14,11 +14,3 @@
 
 - name: Set application settings
   import_tasks: application_settings.yml
-
-- name: Setup OSX defaults
-  import_tasks: osx_settings.yml
-
-- name: Setup shell
-  import_tasks: shell.yml
-  tags:
-    - shell
