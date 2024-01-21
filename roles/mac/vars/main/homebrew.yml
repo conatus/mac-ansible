@@ -1,11 +1,12 @@
 homebrew_taps:
-  - caskroom/fonts
+  - homebrew/cask-fonts
   - heroku/brew
   - homebrew/cask
   - exolnet/homebrew-deprecated
   - caffix/amass
 
 homebrew_packages:
+  - amass
   - dnsmasq
   - gdal
   - gh
@@ -26,13 +27,14 @@ homebrew_packages:
   - python
   - rbenv
   - speedtest-cli
+  - starship
   - tree
 
 homebrew_package_removals: []
 
 homebrew_cask_packages:
-  - ableton-live-standard9
-  - amass
+# Currently this no longer seems to be a formula
+#  - ableton-live-standard9
   - cyberduck
   - discord
   - docker
@@ -47,7 +49,9 @@ homebrew_cask_packages:
   - github
   - insomnia
   - iterm2
-  - keybase
+# Keybase is not compiled yet for modern Mac architectures
+# See https://github.com/keybase/keybase-issues/issues/3968
+#  - keybase
   - linear-linear
   - logseq
   - missive
@@ -62,6 +66,7 @@ homebrew_cask_packages:
   - steam
   - tableplus
   - telegram
+  - timing
   - transmission
   - twist
   - universal-media-server
@@ -69,6 +74,6 @@ homebrew_cask_packages:
   - vivaldi
   - vlc
   - whatsapp
-  - zoomus
+  - zoom
 
 homebrew_cask_removals: []

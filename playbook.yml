@@ -1,6 +1,8 @@
 #!/usr/bin/env ansible-playbook
 - hosts: 127.0.0.1
   connection: local
+  vars:
+   ansible_python_interpreter: /usr/bin/python3
   tasks:
   - debug:
       msg: Check we are running in the directory of the script
@@ -8,5 +10,7 @@
 
 - hosts: 127.0.0.1
   connection: local
+  vars:
+   ansible_python_interpreter: /usr/bin/python3
   roles:
   - mac

@@ -5,6 +5,8 @@ pip_packages:
   - aws-shell
   - pockyt
 
-nodejs_versions: []
+nodejs_versions:
+  - v18.12.1
+  - v19.2.0
 
 global_npm_packages: []

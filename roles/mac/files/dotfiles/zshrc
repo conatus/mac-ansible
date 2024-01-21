@@ -32,8 +32,7 @@ function internet {
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 # Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
+source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 
 export SPACESHIP_CHAR_SYMBOL="> "
 export SPACESHIP_TIME_SHOW=true
@@ -43,9 +42,7 @@ export SPACESHIP_USER_PREFIX=''
 export SPACESHIP_DIR_PREFIX=''
 
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+export PATH="/Users/alex/Library/Python/3.9/bin:$PATH"
 
 HISTFILE="$HOME/.zsh_history"
 export HISTFILESIZE=1000000000
@@ -69,4 +66,4 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 eval "$(rbenv init -)"
 
 # Python
-alias python=/usr/local/bin/python3 
+alias python=/opt/homebrew/bin/python3 

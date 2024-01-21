@@ -14,7 +14,3 @@
     state: link
   loop:
     - zshrc
-# TODO: Fix this - this is an ugly methodology, but is more simple
-# when NVM is in the frame
-# - name: Install Spaceship prompt
-#   shell: npm install -g spaceship-prompt

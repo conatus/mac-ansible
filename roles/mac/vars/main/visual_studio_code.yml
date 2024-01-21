@@ -1,5 +1,5 @@
 visual_studio_code_config_path: Library/Application Support/Code
-visual_studio_code_settings_path: "~{{ ansible_user }}/{{ visual_studio_code_config_path }}/User/settings.json"
+visual_studio_code_settings_path: "~{{ ansible_user_id }}/{{ visual_studio_code_config_path }}/User/settings.json"
 
 visual_studio_code_extensions:
   - ms-python.python
