@@ -35,6 +35,7 @@ homebrew_package_removals: []
 homebrew_cask_packages:
 # Currently this no longer seems to be a formula
 #  - ableton-live-standard9
+  - arc
   - cyberduck
   - discord
   - docker
