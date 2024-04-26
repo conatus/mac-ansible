@@ -53,7 +53,6 @@ homebrew_cask_packages:
 # See https://github.com/keybase/keybase-issues/issues/3968
 #  - keybase
   - linear-linear
-  - logseq
   - missive
   - ngrok
   - notion
