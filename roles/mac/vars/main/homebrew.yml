@@ -66,6 +66,7 @@ homebrew_cask_packages:
   - tableplus
   - telegram
   - timing
+  - raycast
   - transmission
   - twist
   - universal-media-server
