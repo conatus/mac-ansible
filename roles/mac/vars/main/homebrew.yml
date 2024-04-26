@@ -57,6 +57,7 @@ homebrew_cask_packages:
   - missive
   - ngrok
   - notion
+  - raycast
   - signal
   - sizzy
   - sketch
@@ -66,7 +67,6 @@ homebrew_cask_packages:
   - tableplus
   - telegram
   - timing
-  - raycast
   - transmission
   - twist
   - universal-media-server
