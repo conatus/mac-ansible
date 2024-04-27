@@ -57,6 +57,7 @@ homebrew_cask_packages:
   - missive
   - ngrok
   - notion
+  - obsidian
   - protonvpn
   - raycast
   - signal
