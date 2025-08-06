@@ -37,6 +37,7 @@ homebrew_cask_packages:
 #  - ableton-live-standard9
   - arc
   - cyberduck
+  - cursor
   - discord
   - docker
   - element
